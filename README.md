@@ -20,7 +20,7 @@ RestaurantApp es una aplicación web de menú virtual interactivo que permite a 
 
 ## Despliegue
 La aplicación está desplegada en:
-- **GitHub Pages**: https://[tu-usuario].github.io/restaurantapp
+- **GitHub Pages**: https://FelipeChapMart97.github.io/restaurantapp
 - **Vercel**: https://restaurantapp.vercel.app
 
 ## Estructura del Proyecto
