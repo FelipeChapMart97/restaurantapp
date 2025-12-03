@@ -1,0 +1,19 @@
+
+#### **Archivo 5: `package.json`** (Para Vercel)
+```json
+{
+  "name": "restaurantapp",
+  "version": "1.0.0",
+  "description": "Menú virtual para restaurantes",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve .",
+    "build": "echo 'Build completed'"
+  },
+  "keywords": ["restaurant", "menu", "virtual", "qr"],
+  "author": "Tu Nombre",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.0.0"
+  }
+}

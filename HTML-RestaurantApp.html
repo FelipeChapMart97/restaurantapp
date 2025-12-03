@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RestaurantApp - Menú Virtual</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <i class="fas fa-utensils"></i>
+                    <h1>Restaurant<span>App</span></h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#menu">Menú</a></li>
+                    <li><a href="#about">Nosotros</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                    <li><a href="#order" class="btn-order">Ordenar Ahora</a></li>
+                </ul>
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Menú Digital Interactivo</h2>
+                <p>Explora nuestro menú, personaliza tu pedido y pide desde tu mesa con un simple código QR</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn-primary">Ver Menú</a>
+                    <a href="#qr-section" class="btn-secondary">Escanear QR</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Restaurant">
+            </div>
+        </div>
+    </section>
+
+    <!-- QR Section -->
+    <section id="qr-section" class="qr-section">
+        <div class="container">
+            <h2>Accede a Nuestro Menú Digital</h2>
+            <p>Escanea este código QR con tu smartphone</p>
+            <div class="qr-container">
+                <div class="qr-code">
+                    <div class="qr-placeholder">
+                        <div class="qr-pattern"></div>
+                        <div class="qr-text">RestaurantApp</div>
+                    </div>
+                </div>
+                <div class="qr-instructions">
+                    <h3>Instrucciones:</h3>
+                    <ol>
+                        <li>Abre la cámara de tu celular</li>
+                        <li>Enfoca el código QR</li>
+                        <li>Toca la notificación que aparece</li>
+                        <li>¡Explora nuestro menú digital!</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2>Nuestro Menú</h2>
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="all">Todos</button>
+                <button class="category-btn" data-category="entradas">Entradas</button>
+                <button class="category-btn" data-category="principales">Platos Principales</button>
+                <button class="category-btn" data-category="postres">Postres</button>
+                <button class="category-btn" data-category="bebidas">Bebidas</button>
+            </div>
+            
+            <div class="menu-grid">
+                <!-- Los items se cargarán con JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>Sobre RestaurantApp</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Tu Menú Digital Inteligente</h3>
+                    <p>RestaurantApp revoluciona la experiencia gastronómica mediante tecnología moderna que permite a los clientes acceder al menú, realizar pedidos y solicitar servicios directamente desde sus dispositivos móviles.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Menú digital actualizable en tiempo real</li>
+                        <li><i class="fas fa-check"></i> Sistema de pedidos integrado</li>
+                        <li><i class="fas fa-check"></i> Notificaciones de estado del pedido</li>
+                        <li><i class="fas fa-check"></i> Pago digital seguro</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1554679665-f5537f187268?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Tecnología en restaurante">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contáctanos</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3><i class="fas fa-map-marker-alt"></i> Dirección</h3>
+                    <p>Calle Principal #123, Ciudad</p>
+                    
+                    <h3><i class="fas fa-phone"></i> Teléfono</h3>
+                    <p>+1 (555) 123-4567</p>
+                    
+                    <h3><i class="fas fa-envelope"></i> Email</h3>
+                    <p>info@restaurantapp.com</p>
+                    
+                    <h3><i class="fas fa-clock"></i> Horarios</h3>
+                    <p>Lunes a Viernes: 11:00 - 22:00<br>
+                    Sábado y Domingo: 10:00 - 23:00</p>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <input type="text" placeholder="Tu nombre" required>
+                        <input type="email" placeholder="Tu email" required>
+                        <textarea placeholder="Tu mensaje" rows="5" required></textarea>
+                        <button type="submit" class="btn-primary">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Restaurant<span>App</span></h3>
+                    <p>Menú digital para la nueva era gastronómica</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Inicio</a></li>
+                        <li><a href="#menu">Menú</a></li>
+                        <li><a href="#about">Nosotros</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Síguenos</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 RestaurantApp. Todos los derechos reservados. | Desplegado en GitHub Pages</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h3>Tu Pedido</h3>
+                <button class="close-cart">&times;</button>
+            </div>
+            <div class="cart-items"></div>
+            <div class="cart-total">
+                <span>Total:</span>
+                <span class="total-amount">$0.00</span>
+            </div>
+            <button class="btn-primary checkout-btn">Confirmar Pedido</button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
